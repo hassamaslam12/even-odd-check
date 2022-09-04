@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boolean</title>
+</head>
+<body>
+    <h1>boolean data type</h1>
+    <h2>Even Or Odd</h2>
+    <input type="number" id="number">
+    <button onsubmit="doCheck(); return false " >Check</button>
+    <h2 id="result">IF YOUR ANSWER IS 0 THE NUMBER IS EVEN & IF YOUR ANSWER IS 1 THE NUMBER IS ODD</h2>
+    <script>
+        // let isopen = true;
+        function doCheck(){
+            let number = +document.querySelector("number").value;
+            let result = number%2
+            document.querySelector("#result").innerhtml=result
+
+        }
+
+    </script>
+
+</body>
+</html>
